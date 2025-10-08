@@ -1,2 +1,2 @@
-# redissessionsse
-Use Redis for managing session in spring boot SSE app
+# Artemis Client
+Simple Apache ActiveMQ Artemis client
