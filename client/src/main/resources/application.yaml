@@ -1,0 +1,14 @@
+server:
+  port: 5000
+
+spring:
+  artemis:
+    mode: native
+    broker-url: ${ARTEMIS_BROKER_URL}
+    user: ${ARTEMIS_USER}
+    password: ${ARTEMIS_PASSWORD}
+  jms:
+    pub-sub-domain: true
+
+jms:
+  topic: ${JMS_TOPIC}
