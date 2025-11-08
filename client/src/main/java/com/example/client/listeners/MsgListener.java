@@ -1,15 +1,15 @@
-package com.example.client;
+package com.example.client.listeners;
 
 import jakarta.jms.Message;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MessageConsumer {
+public class MsgListener {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MessageConsumer.class);
+    private static final Logger LOGGER = LogManager.getLogger(MsgListener.class);
 
     @JmsListener(destination = "${jms.topic}")
     public void receiveMessage(Message message) {
