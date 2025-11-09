@@ -1,1 +1,15 @@
-<p>receive-view works!</p>
+<div class="column-view-card">
+  <div class="card-body">
+    <h2 class="card-title">Receive Messages</h2>
+    <div id="receiveViewInnerBox" class="card">
+      @for (message of messageList; track message) {
+        <div class="alert alert-primary" role="alert">
+          {{ message }}
+        </div>
+      } @empty {
+        <div class="alert alert-warning" role="alert">No messages received</div>
+      }
+    </div>
+    <button type="submit" class="btn btn-primary">Clear</button>
+  </div>
+</div>

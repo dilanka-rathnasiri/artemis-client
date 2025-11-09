@@ -6,3 +6,16 @@ html,
 body {
   height: 100%;
 }
+
+.column-view-card {
+  @extend .card;
+  height: 100%;
+  margin: 1rem;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

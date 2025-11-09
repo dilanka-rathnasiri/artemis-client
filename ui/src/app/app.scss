@@ -6,7 +6,9 @@
 
 .root-column {
   flex: 1;
-  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 #rootLeftBox {

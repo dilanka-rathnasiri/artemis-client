@@ -4,5 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-receive-view',
   imports: [],
   templateUrl: './receive-view.html',
+  styleUrl: './receive-view.scss',
 })
-export class ReceiveView {}
+export class ReceiveView {
+  messageList: string[] = [];
+}
