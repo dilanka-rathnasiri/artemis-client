@@ -1,7 +1,6 @@
 **/.idea
-**/target
 **/.vscode
-client/dev.env
 **/node_modules
-**/.angular
 **/dist
+**/.qodo
+**/.angular

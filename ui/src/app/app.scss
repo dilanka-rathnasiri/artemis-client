@@ -1,0 +1,18 @@
+#rootMainBox {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.root-column {
+  flex: 1;
+  margin: 2rem;
+}
+
+#rootLeftBox {
+  @extend .root-column;
+}
+
+#rootRightBox {
+  @extend .root-column;
+}
